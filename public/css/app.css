@@ -1,0 +1,62 @@
+.morpion {
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+.morpion td {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #333;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.pied {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+
+.morpion td a.case-vide {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+}
+
+.morpion td a.case-vide:hover {
+    background-color: #f0f0f0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at 70% 85%, rgba(255, 120, 0, 0.45), transparent 40%),
+        linear-gradient(180deg, #0b0b12 0%, #1b1020 55%, #2a1208 100%);
+    background-attachment: fixed;
+}
+
+h1, .resultat { text-align: center; }
+.resultat a { color: #ffb347; }
+
+.morpion td { background: rgba(0, 0, 0, 0.55); }
+
+.centre { text-align: center; }
+.erreur { text-align: center; color: #c0392b; font-weight: bold; }
+
+.morpion .case-vide {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+.morpion .case-vide:hover { background-color: #f0f0f0; }
+
+.historique { width: fit-content; margin: 0 auto 30px; }
